@@ -173,4 +173,94 @@ export default function Home() {
             <h4 className="font-bold text-xl text-emerald-900 mb-2">Band Competition</h4>
             <p className="text-emerald-700/80 text-sm mb-6">Ajang unjuk gigi band sekolah membawakan lagu bebas & wajib.</p>
             <div className="border-t border-emerald-50 pt-4 mt-auto">
-              <span className="block text-xs text-emerald-600
+              <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person (WA):</span>
+              <span className="font-black text-rose-600">Bima - 0898-7654-3210</span>
+            </div>
+          </div>
+
+          <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors">
+            <div className="text-4xl mb-4">⚽</div>
+            <h4 className="font-bold text-xl text-emerald-900 mb-2">Futsal Cup</h4>
+            <p className="text-emerald-700/80 text-sm mb-6">Turnamen futsal bergengsi antar SMA untuk memperebutkan piala AVASSCO.</p>
+            <div className="border-t border-emerald-50 pt-4 mt-auto">
+              <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person (WA):</span>
+              <span className="font-black text-rose-600">Dito - 0856-1122-3344</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* MERCHANDISE SECTION */}
+      <section id="merch" className="py-16 px-6 max-w-6xl mx-auto">
+        <div className="bg-emerald-50 border-2 border-emerald-200 rounded-3xl p-8 md:p-12 shadow-lg">
+          <div className="text-center mb-10">
+            <h2 className="text-3xl font-black text-emerald-900">Official Merchandise</h2>
+            <p className="text-emerald-700 mt-2 font-medium">Bawa pulang kenang-kenangan eksklusif AVASSCO XI.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
+              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">👕</div>
+              <h4 className="font-bold text-lg text-emerald-900">T-Shirt AVASSCO</h4>
+              <p className="font-black text-2xl text-rose-600 my-2">Rp 120.000</p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
+              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🛍️</div>
+              <h4 className="font-bold text-lg text-emerald-900">Tote Bag Kanvas</h4>
+              <p className="font-black text-2xl text-rose-600 my-2">Rp 55.000</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
+              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🎫</div>
+              <h4 className="font-bold text-lg text-emerald-900">Lanyard Exclusive</h4>
+              <p className="font-black text-2xl text-rose-600 my-2">Rp 25.000</p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <a href="https://www.instagram.com/avassco_" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-8 py-3 rounded-full transition-colors">
+              Pesan Merch Lewat DM Instagram
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FOOTER & LOKASI */}
+      <footer className="bg-emerald-950 text-emerald-300 py-16 text-center border-t-8 border-amber-400 mt-12">
+        <div className="max-w-4xl mx-auto px-6">
+          <div className="font-black text-4xl text-white mb-2 tracking-wider">AVA<span className="text-rose-500">SSCO</span> <span className="text-amber-400">XI</span></div>
+          <p className="mb-10 text-emerald-200">SMA Islam Al Azhar 8 Kota Bekasi</p>
+          
+          <div className="bg-emerald-900/50 p-6 rounded-2xl border border-emerald-800 mb-10 max-w-lg mx-auto">
+            <p className="text-sm mb-4 leading-relaxed text-emerald-100">
+              Jl. Bulevar Utara Blok L, RT.006/RW.003, Marga Mulya, Kec. Bekasi Utara, Kota Bekasi, Jawa Barat 17426
+            </p>
+            <a 
+              href="https://maps.google.com/?q=SMA+Islam+Al+Azhar+8+Kota+Bekasi" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-block bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold px-5 py-2.5 rounded-lg transition-colors"
+            >
+              📍 Buka Petunjuk Arah
+            </a>
+          </div>
+
+          <div className="mb-6">
+            <a 
+              href="https://www.instagram.com/avassco_" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 text-white hover:text-amber-300 transition-colors bg-emerald-800/80 px-6 py-3 rounded-full border border-emerald-700"
+            >
+              <svg className="w-5 h-5 fill-current text-rose-400" viewBox="0 0 24 24">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+              <span className="font-bold tracking-wide">@avassco_</span>
+            </a>
+          </div>
+          <p className="text-xs text-emerald-600/80">&copy; 2026 AVASSCO SMA Islam Al Azhar 8. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+  );
+}
