@@ -148,32 +148,31 @@ export default function Home() {
 
         {/* Kategori SMA */}
         <div className="mb-16">
-          <h3 className="text-2xl font-black text-rose-600 mb-8 border-b-2 border-rose-200 pb-2 inline-block">Tingkat SMA</h3>
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-black text-rose-600 border-b-2 border-rose-200 pb-2 inline-block uppercase tracking-wider">SMA Category</h3>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors flex flex-col">
+            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors flex flex-col text-center">
               <div className="text-4xl mb-4">⚽</div>
-              <h4 className="font-bold text-xl text-emerald-900 mb-2">Futsal</h4>
-              <p className="text-emerald-700/80 text-sm mb-6">Turnamen futsal bergengsi antar SMA.</p>
+              <h4 className="font-bold text-xl text-emerald-900 mb-6">Futsal</h4>
               <div className="border-t border-emerald-50 pt-4 mt-auto">
                 <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person:</span>
                 <span className="font-black text-rose-600">Dito - 0811-1234-5678</span>
               </div>
             </div>
             
-            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors flex flex-col">
+            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors flex flex-col text-center">
               <div className="text-4xl mb-4">🏀</div>
-              <h4 className="font-bold text-xl text-emerald-900 mb-2">Basket (Putra & Putri)</h4>
-              <p className="text-emerald-700/80 text-sm mb-6">Kompetisi bola basket memperebutkan gelar juara.</p>
+              <h4 className="font-bold text-xl text-emerald-900 mb-6">Basket (Putra & Putri)</h4>
               <div className="border-t border-emerald-50 pt-4 mt-auto">
                 <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person:</span>
                 <span className="font-black text-rose-600">Bima - 0822-2345-6789</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors flex flex-col">
+            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors flex flex-col text-center">
               <div className="text-4xl mb-4">🎤</div>
-              <h4 className="font-bold text-xl text-emerald-900 mb-2">Solo Vokal</h4>
-              <p className="text-emerald-700/80 text-sm mb-6">Ajang unjuk kebolehan olah vokal terbaik.</p>
+              <h4 className="font-bold text-xl text-emerald-900 mb-6">Solo Vokal</h4>
               <div className="border-t border-emerald-50 pt-4 mt-auto">
                 <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person:</span>
                 <span className="font-black text-rose-600">Rara - 0833-3456-7890</span>
@@ -184,32 +183,31 @@ export default function Home() {
 
         {/* Kategori SMP */}
         <div>
-          <h3 className="text-2xl font-black text-amber-500 mb-8 border-b-2 border-amber-200 pb-2 inline-block">Tingkat SMP</h3>
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-black text-amber-500 border-b-2 border-amber-200 pb-2 inline-block uppercase tracking-wider">SMP Category</h3>
+          </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-rose-300 transition-colors flex flex-col">
+            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-rose-300 transition-colors flex flex-col text-center">
               <div className="text-4xl mb-4">📖</div>
-              <h4 className="font-bold text-xl text-emerald-900 mb-2">MTQ</h4>
-              <p className="text-emerald-700/80 text-sm mb-6">Musabaqoh Tilawatil Qur'an antar SMP sederajat.</p>
+              <h4 className="font-bold text-xl text-emerald-900 mb-6">MTQ</h4>
               <div className="border-t border-emerald-50 pt-4 mt-auto">
                 <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person:</span>
                 <span className="font-black text-rose-600">Fikri - 0844-4567-8901</span>
               </div>
             </div>
             
-            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-rose-300 transition-colors flex flex-col">
+            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-rose-300 transition-colors flex flex-col text-center">
               <div className="text-4xl mb-4">💃</div>
-              <h4 className="font-bold text-xl text-emerald-900 mb-2">Ratoh Jaroe</h4>
-              <p className="text-emerald-700/80 text-sm mb-6">Lomba kekompakan tari tradisional asal Aceh.</p>
+              <h4 className="font-bold text-xl text-emerald-900 mb-6">Ratoh Jaroe</h4>
               <div className="border-t border-emerald-50 pt-4 mt-auto">
                 <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person:</span>
                 <span className="font-black text-rose-600">Dina - 0855-5678-9012</span>
               </div>
             </div>
 
-            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-rose-300 transition-colors flex flex-col">
+            <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-rose-300 transition-colors flex flex-col text-center">
               <div className="text-4xl mb-4">🔬</div>
-              <h4 className="font-bold text-xl text-emerald-900 mb-2">Science Quest</h4>
-              <p className="text-emerald-700/80 text-sm mb-6">Uji ketangkasan wawasan dan eksperimen sains.</p>
+              <h4 className="font-bold text-xl text-emerald-900 mb-6">Science Quest</h4>
               <div className="border-t border-emerald-50 pt-4 mt-auto">
                 <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person:</span>
                 <span className="font-black text-rose-600">Aris - 0866-6789-0123</span>
@@ -227,28 +225,47 @@ export default function Home() {
             <p className="text-emerald-700 mt-2 font-medium">Koleksi item spesial dari AVASSCO XI sebelum kehabisan.</p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
+          {/* 5 Merch Items Grid */}
+          <div className="flex flex-wrap justify-center gap-6">
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm w-full sm:w-[220px]">
               <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🛍️</div>
-              <h4 className="font-bold text-lg text-emerald-900">Tote Bag</h4>
+              <h4 className="font-bold text-lg text-emerald-900">Foldable Bag</h4>
               <p className="font-black text-2xl text-rose-600 my-2">35 K</p>
             </div>
             
-            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm w-full sm:w-[220px]">
+              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">✨</div>
+              <h4 className="font-bold text-lg text-emerald-900">Sticker</h4>
+              <p className="font-black text-2xl text-rose-600 my-2">9 K</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm w-full sm:w-[220px]">
               <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">💳</div>
               <h4 className="font-bold text-lg text-emerald-900">Card Holder</h4>
               <p className="font-black text-2xl text-rose-600 my-2">40 K</p>
             </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
-              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">✨</div>
-              <h4 className="font-bold text-lg text-emerald-900">Sticker Set</h4>
-              <p className="font-black text-2xl text-rose-600 my-2">9 K</p>
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm w-full sm:w-[220px]">
+              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🧢</div>
+              <h4 className="font-bold text-lg text-emerald-900">Topi</h4>
+              <p className="font-black text-2xl text-rose-600 my-2">40 K</p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm w-full sm:w-[220px]">
+              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🪭</div>
+              <h4 className="font-bold text-lg text-emerald-900">Kipas</h4>
+              <p className="font-black text-2xl text-rose-600 my-2">10 K</p>
             </div>
           </div>
-          <div className="text-center mt-8">
-            <a href="https://www.instagram.com/avassco_" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-8 py-3 rounded-full transition-colors">
-              Pesan Merch Lewat DM Instagram
+          
+          <div className="text-center mt-10">
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSc0IHoaIfhCyf7gUxVK-O4XvNdIC0qHRkp0GaQ3Ns_PLmW89A/viewform" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-8 py-4 rounded-full transition-colors shadow-md"
+            >
+              🛒 PESAN MERCHANDISE DI SINI
             </a>
           </div>
         </div>
