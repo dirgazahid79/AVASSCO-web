@@ -3,12 +3,11 @@
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  // Logic untuk Countdown Timer berjalan
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
 
   useEffect(() => {
-    // Set target hari H (misal: 18 Oktober 2026 jam 07:30 WIB)
-    const targetDate = new Date("2026-10-18T07:30:00+07:00").getTime();
+    // Target: Selasa, 13 Oktober 2026 jam 07:00 pagi (WIB)
+    const targetDate = new Date("2026-10-13T07:00:00+07:00").getTime();
 
     const interval = setInterval(() => {
       const now = new Date().getTime();
@@ -22,7 +21,7 @@ export default function Home() {
           seconds: Math.floor((difference % (1000 * 60)) / 1000),
         });
       } else {
-        clearInterval(interval); // Hentikan jika waktu habis
+        clearInterval(interval);
       }
     }, 1000);
 
@@ -30,7 +29,6 @@ export default function Home() {
   }, []);
 
   return (
-    // Background diubah jadi warna terang/krem ala tema AVASSCO XI
     <main className="min-h-screen bg-[#FDF8E7] text-emerald-950 font-sans selection:bg-emerald-500 selection:text-white pb-20">
       
       {/* NAVBAR SECTION */}
@@ -51,9 +49,6 @@ export default function Home() {
       {/* HERO / BERANDA SECTION */}
       <section id="beranda" className="relative pt-44 pb-20 px-6 text-center overflow-hidden">
         <div className="max-w-4xl mx-auto relative z-10">
-          <span className="inline-block bg-rose-100 text-rose-700 border border-rose-300 text-xs font-bold px-5 py-2 rounded-full mb-6 tracking-widest uppercase animate-bounce">
-            🔥 MINGGU DEPAN
-          </span>
           <h1 className="text-6xl md:text-8xl font-black tracking-tight mb-4 text-emerald-900 drop-shadow-sm">
             AVA<span className="text-rose-600">SSCO</span> <span className="text-amber-500">XI</span>
           </h1>
@@ -61,206 +56,9 @@ export default function Home() {
             Pentas Seni & Kreativitas Al Azhar 8
           </p>
           <p className="text-lg font-medium max-w-2xl mx-auto text-emerald-700/80 mb-10 leading-relaxed">
-            Siapkan dirimu untuk malam puncak paling bersejarah tahun ini! Rayakan semangat budaya dan kreativitas tanpa batas bersama kami.
+            Siapkan dirimu untuk perayaan paling bersejarah tahun ini! Tunjukkan bakat, kreativitas, dan semangat budaya tanpa batas bersama kami.
           </p>
         </div>
       </section>
 
-      {/* COUNTDOWN TIMER (SEKARANG JALAN!) */}
-      <section className="px-6 max-w-4xl mx-auto -mt-6 relative z-20 mb-24">
-        <div className="bg-gradient-to-r from-amber-400 to-yellow-400 p-8 rounded-3xl text-center shadow-xl border-4 border-white">
-          <h3 className="text-2xl font-black mb-6 text-emerald-900 uppercase tracking-wide">Hitung Mundur Acara</h3>
-          <div className="grid grid-cols-4 gap-3 md:gap-6 text-center">
-            <div className="bg-white/90 p-4 md:p-6 rounded-2xl shadow-sm">
-              <span className="block text-4xl md:text-5xl font-black text-rose-600 mb-1">{timeLeft.days}</span>
-              <span className="text-[10px] md:text-sm text-emerald-800 uppercase font-bold">Hari</span>
-            </div>
-            <div className="bg-white/90 p-4 md:p-6 rounded-2xl shadow-sm">
-              <span className="block text-4xl md:text-5xl font-black text-rose-600 mb-1">{timeLeft.hours}</span>
-              <span className="text-[10px] md:text-sm text-emerald-800 uppercase font-bold">Jam</span>
-            </div>
-            <div className="bg-white/90 p-4 md:p-6 rounded-2xl shadow-sm">
-              <span className="block text-4xl md:text-5xl font-black text-rose-600 mb-1">{timeLeft.minutes}</span>
-              <span className="text-[10px] md:text-sm text-emerald-800 uppercase font-bold">Menit</span>
-            </div>
-            <div className="bg-white/90 p-4 md:p-6 rounded-2xl shadow-sm">
-              <span className="block text-4xl md:text-5xl font-black text-rose-600 mb-1">{timeLeft.seconds}</span>
-              <span className="text-[10px] md:text-sm text-emerald-800 uppercase font-bold">Detik</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* GUEST STAR & TIKET SECTION */}
-      <section id="event" className="py-16 px-6 max-w-6xl mx-auto">
-        <div className="bg-emerald-900 border-4 border-emerald-700 rounded-3xl p-8 md:p-14 shadow-2xl text-white">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            
-            {/* Guest Star */}
-            <div>
-              <span className="text-amber-400 font-bold uppercase tracking-widest text-xs">Penampilan Utama</span>
-              <h2 className="text-4xl md:text-5xl font-black mt-2 mb-8 text-white">GUEST STARS</h2>
-              <ul className="space-y-6">
-                <li className="flex items-center space-x-4">
-                  <div className="text-4xl">🎸</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-amber-300">MALIQ & D'Essentials</h3>
-                    <p className="text-emerald-200/80 text-sm">Menemani malam puncak dengan lagu hits andalan.</p>
-                  </div>
-                </li>
-                <li className="flex items-center space-x-4">
-                  <div className="text-4xl">🎙️</div>
-                  <div>
-                    <h3 className="text-2xl font-bold text-amber-300">TULUS</h3>
-                    <p className="text-emerald-200/80 text-sm">Menyuarakan harmoni indah di panggung AVASSCO XI.</p>
-                  </div>
-                </li>
-              </ul>
-              <p className="mt-8 text-sm text-emerald-300 italic">*Guest star dapat berubah atau bertambah, ikuti update di IG @avassco_</p>
-            </div>
-
-            {/* Info Tiket */}
-            <div className="bg-emerald-950/50 p-8 rounded-3xl border border-emerald-800 backdrop-blur-sm">
-              <h3 className="text-2xl font-bold mb-6 text-amber-400 text-center uppercase tracking-wide">Info Tiket</h3>
-              <ul className="space-y-4 mb-8">
-                <li className="flex justify-between items-center border-b border-emerald-700/50 pb-3">
-                  <span className="font-medium text-emerald-100">Presale 1</span> 
-                  <span className="font-bold text-rose-400 bg-rose-950/50 px-3 py-1 rounded-lg text-sm">SOLD OUT</span>
-                </li>
-                <li className="flex justify-between items-center border-b border-emerald-700/50 pb-3">
-                  <span className="font-medium text-emerald-100">Presale 2 (Reguler)</span> 
-                  <span className="font-bold text-amber-300">Rp 110.000</span>
-                </li>
-                <li className="flex justify-between items-center pb-2">
-                  <span className="font-medium text-emerald-100">On The Spot (OTS)</span> 
-                  <span className="font-bold text-amber-300">Rp 150.000</span>
-                </li>
-              </ul>
-              <a 
-                href="https://www.instagram.com/avassco_" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="block w-full text-center bg-amber-500 hover:bg-amber-400 text-emerald-950 font-black px-6 py-4 rounded-xl transition-all shadow-lg"
-              >
-                🎟️ BELI TIKET SEKARANG
-              </a>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      {/* INFO LOMBA & CP */}
-      <section id="lomba" className="py-16 px-6 max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-4xl font-black text-emerald-900 tracking-tight">Kategori Lomba</h2>
-          <p className="text-emerald-700 mt-2 font-medium">Tunjukkan bakatmu dan raih total hadiah jutaan rupiah!</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors">
-            <div className="text-4xl mb-4">💃</div>
-            <h4 className="font-bold text-xl text-emerald-900 mb-2">Tari Tradisional</h4>
-            <p className="text-emerald-700/80 text-sm mb-6">Kompetisi tari kreasi budaya tingkat SMA sederajat.</p>
-            <div className="border-t border-emerald-50 pt-4 mt-auto">
-              <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person (WA):</span>
-              <span className="font-black text-rose-600">Rara - 0812-3456-7890</span>
-            </div>
-          </div>
-          
-          <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors">
-            <div className="text-4xl mb-4">🎵</div>
-            <h4 className="font-bold text-xl text-emerald-900 mb-2">Band Competition</h4>
-            <p className="text-emerald-700/80 text-sm mb-6">Ajang unjuk gigi band sekolah membawakan lagu bebas & wajib.</p>
-            <div className="border-t border-emerald-50 pt-4 mt-auto">
-              <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person (WA):</span>
-              <span className="font-black text-rose-600">Bima - 0898-7654-3210</span>
-            </div>
-          </div>
-
-          <div className="bg-white p-8 rounded-3xl border-2 border-emerald-100 shadow-md hover:border-amber-300 transition-colors">
-            <div className="text-4xl mb-4">⚽</div>
-            <h4 className="font-bold text-xl text-emerald-900 mb-2">Futsal Cup</h4>
-            <p className="text-emerald-700/80 text-sm mb-6">Turnamen futsal bergengsi antar SMA untuk memperebutkan piala AVASSCO.</p>
-            <div className="border-t border-emerald-50 pt-4 mt-auto">
-              <span className="block text-xs text-emerald-600 mb-1 font-bold">Contact Person (WA):</span>
-              <span className="font-black text-rose-600">Dito - 0856-1122-3344</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* MERCHANDISE SECTION */}
-      <section id="merch" className="py-16 px-6 max-w-6xl mx-auto">
-        <div className="bg-emerald-50 border-2 border-emerald-200 rounded-3xl p-8 md:p-12 shadow-lg">
-          <div className="text-center mb-10">
-            <h2 className="text-3xl font-black text-emerald-900">Official Merchandise</h2>
-            <p className="text-emerald-700 mt-2 font-medium">Bawa pulang kenang-kenangan eksklusif AVASSCO XI.</p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
-              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">👕</div>
-              <h4 className="font-bold text-lg text-emerald-900">T-Shirt AVASSCO</h4>
-              <p className="font-black text-2xl text-rose-600 my-2">Rp 120.000</p>
-            </div>
-            
-            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
-              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🛍️</div>
-              <h4 className="font-bold text-lg text-emerald-900">Tote Bag Kanvas</h4>
-              <p className="font-black text-2xl text-rose-600 my-2">Rp 55.000</p>
-            </div>
-
-            <div className="bg-white p-6 rounded-2xl border border-emerald-100 text-center shadow-sm">
-              <div className="w-full h-32 bg-amber-50 rounded-xl mb-4 flex items-center justify-center text-5xl">🎫</div>
-              <h4 className="font-bold text-lg text-emerald-900">Lanyard Exclusive</h4>
-              <p className="font-black text-2xl text-rose-600 my-2">Rp 25.000</p>
-            </div>
-          </div>
-          <div className="text-center mt-8">
-            <a href="https://www.instagram.com/avassco_" target="_blank" rel="noopener noreferrer" className="inline-block bg-emerald-700 hover:bg-emerald-800 text-white font-bold px-8 py-3 rounded-full transition-colors">
-              Pesan Merch Lewat DM Instagram
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* FOOTER & LOKASI */}
-      <footer className="bg-emerald-950 text-emerald-300 py-16 text-center border-t-8 border-amber-400 mt-12">
-        <div className="max-w-4xl mx-auto px-6">
-          <div className="font-black text-4xl text-white mb-2 tracking-wider">AVA<span className="text-rose-500">SSCO</span> <span className="text-amber-400">XI</span></div>
-          <p className="mb-10 text-emerald-200">SMA Islam Al Azhar 8 Kota Bekasi</p>
-          
-          <div className="bg-emerald-900/50 p-6 rounded-2xl border border-emerald-800 mb-10 max-w-lg mx-auto">
-            <p className="text-sm mb-4 leading-relaxed text-emerald-100">
-              Jl. Bulevar Utara Blok L, RT.006/RW.003, Marga Mulya, Kec. Bekasi Utara, Kota Bekasi, Jawa Barat 17426
-            </p>
-            <a 
-              href="https://maps.google.com/?q=SMA+Islam+Al+Azhar+8+Kota+Bekasi" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-block bg-emerald-700 hover:bg-emerald-600 text-white text-xs font-bold px-5 py-2.5 rounded-lg transition-colors"
-            >
-              📍 Buka Petunjuk Arah
-            </a>
-          </div>
-
-          <div className="mb-6">
-            <a 
-              href="https://www.instagram.com/avassco_" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="inline-flex items-center space-x-2 text-white hover:text-amber-300 transition-colors bg-emerald-800/80 px-6 py-3 rounded-full border border-emerald-700"
-            >
-              <svg className="w-5 h-5 fill-current text-rose-400" viewBox="0 0 24 24">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-              <span className="font-bold tracking-wide">@avassco_</span>
-            </a>
-          </div>
-          <p className="text-xs text-emerald-600/80">&copy; 2026 AVASSCO SMA Islam Al Azhar 8. All rights reserved.</p>
-        </div>
-      </footer>
-    </main>
-  );
-}
+      {/* COUNTDOWN TIMER
