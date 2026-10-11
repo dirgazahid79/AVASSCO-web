@@ -53,10 +53,10 @@ export default function Home() {
             AVA<span className="text-rose-600">SSCO</span> <span className="text-amber-500">XI</span>
           </h1>
           <p className="text-2xl md:text-3xl font-bold text-emerald-800 mb-6">
-            Pentas Seni & Kreativitas Al Azhar 8
+             Merajut Cerite Jawara, Mengukir Warisan Sepanjang Masa!
           </p>
           <p className="text-lg font-medium max-w-2xl mx-auto text-emerald-700/80 mb-10 leading-relaxed">
-            Siapkan dirimu untuk perayaan paling bersejarah tahun ini! Tunjukkan bakat, kreativitas, dan semangat budaya tanpa batas bersama kami.
+            Inspired by the vibrant spirit of Betawi culture, this is your moment to shine! Prove your potential, and become the next Jawara
           </p>
         </div>
       </section>
@@ -100,7 +100,7 @@ export default function Home() {
                 <div>
                   <h3 className="text-3xl font-black text-amber-300 tracking-wide uppercase">The Changcuters</h3>
                   <p className="text-emerald-200 mt-3 leading-relaxed text-sm">
-                    Grup band rock and roll legendaris asal Bandung yang terbentuk sejak 2004. Siap mengguncang panggung AVASSCO XI dengan energi maksimal, gaya vintage 50-an, dan lagu-lagu ikonik seperti "Racun Dunia" dan "I Love U Bibeh"!
+                    "THE CHANGCUTERS IS A LEGENDARY INDONESIAN ROCK AND ROLL BAND FROM BANDUNG FORMED IN 2004, CONSISTING OF TRIA (VOCALS), QIBIL AND ALDA (GUITARS), DIPA (BASS), AND ERICK (DRUMS). KNOWN FOR THEIR VINTAGE 50S ROCKABILLY STYLE WITH SLICKED-BACK HAIR AND HIGH-ENERGY PERFORMANCES, THEY BECAME FAMOUS IN 2008 THROUGH THEIR HIT ALBUM 'MENCOBA SUKSES' WITH ICONIC SONGS LIKE 'RACUN DUNIA', 'I LOVE U BIBEH', AND 'GILA CINTA', MIXING FUNNY SLANG, LOVE, AND SOCIAL COMMENTARY WITH AUTHENTIC ROCK AND ROLL SPIRIT."
                   </p>
                 </div>
               </div>
